@@ -8,3 +8,4 @@ botao.forEach(box => {
         box.setAttribute('style', 'background-color: rgb(214, 214, 214);')
     })
 })
+

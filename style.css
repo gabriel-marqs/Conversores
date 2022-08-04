@@ -48,6 +48,10 @@ section {
     text-transform: uppercase;
 }
 
+#voltar {
+    text-align: right;
+}
+
 .botao {
     background-color: rgb(214, 214, 214);
     border: solid;
