@@ -62,3 +62,23 @@ function calcMi(){
 
     resmi.innerHTML = `KM = ${km}<br>Jardas = ${jar}<br>Polegadas = ${pol}<br>Milhas Náuticas = ${mn.toFixed(3)}`
 }
+
+function calcBi() {
+    var bi = document.querySelector('input#numbi')
+    bi = String(bi.value)
+    var resbi = document.querySelector('div#resbi')
+    resbi.innerHTML = ''
+    var splits = bi.split("")
+    splits = splits.reverse()
+    var leitor = bi.length - 1
+    var soma = 0 
+    for (var t = leitor; t >= 0; t--){
+        var pot = 2**t
+        if (splits[t] == 0){
+            pot = 0
+        } else {
+        }
+        soma += pot
+        }
+        resbi.innerHTML += `${bi} (bin) = ${soma} (dec)`
+    }
