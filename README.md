@@ -1,4 +1,4 @@
 # Conversores
 Ferramentas de conversões
 
-Criação de ferramentas para conversão, dando múltiplas opções organizando a página com CSS e JavaScript
+Utilizando de uma interface com HTML5 + CSS3 para desenvolver ferramentas em JavaScript para conversão de medidas, temperaturas e numéricos (Binário para decimal, etc)
