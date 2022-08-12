@@ -63,6 +63,7 @@ function calcMi(){
     resmi.innerHTML = `KM = ${km}<br>Jardas = ${jar}<br>Polegadas = ${pol}<br>Milhas Náuticas = ${mn.toFixed(3)}`
 }
 
+
 function calcBi() {
     var bi = document.querySelector('input#numbi')
     bi = String(bi.value)
@@ -73,12 +74,19 @@ function calcBi() {
     var leitor = bi.length - 1
     var soma = 0 
     for (var t = leitor; t >= 0; t--){
+        if (splits[t] > 1 || splits[t] == '-') {
+            r = 1
+        } else {
+        r = 2
         var pot = 2**t
         if (splits[t] == 0){
             pot = 0
-        } else {
         }
         soma += pot
+        }}
+        if (r == 1) {
+            resbi.innerHTML = `Verifique as informações. Preencha com um número binário.`
+        } else {
+            resbi.innerHTML = `${bi} (bin) = ${soma} (dec)`
+        }      
         }
-        resbi.innerHTML += `${bi} (bin) = ${soma} (dec)`
-    }
